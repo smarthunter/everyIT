@@ -1,11 +1,32 @@
-.p this is book2111.jade #{map.aa}
-each book in List509c9c631050dd91f4276101
-  if(book.available==true)
-    div(style='border:1px solid blue;') availabe #{book.name}
-  else 
-    div#nobook.class1.class2 huhu #{book.name}
-each book in List50ceb97310502c05ff7be589
-  if(book.available==true)
-    div(style='border:1px solid red;') availabe #{book.name}
-  else 
-    div#nobook.class1.class2 huhu #{book.name}
+doctype HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+html
+  head
+    block head
+      script(src='/script/jquery/jquery-1.3.2.min.js')
+      link(rel='stylesheet', href='/1.css', type='text/css' )
+      title= pageName
+  body
+    if pageName=='te'
+      p pppppppp#{pageName}
+    else
+      p xxxxx334r54#{pageName}
+    if book1==null || book1.length==0
+      p lenemapty
+    else
+      p len2
+    //each item, i in books
+      //li #{item.price}: #{i}
+    each nn in name
+      li #{nn}
+    each kk,i in map
+      li #{i},#{kk}
+    #subdiv1
+    div
+      我是好人
+    #dd(style='width:400px;border:1px solid green;')
+      include d://pic
+    script
+      jQuery(document.body).append("<div>1111111111111</div>");
+      
+  
+    
