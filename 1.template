@@ -1,0 +1,5 @@
+div#pageJade#num#
+  if(#{pageSet#num#.hasPage}==1) 
+    script
+      var t=pageLoad(#{pageSet#num#.pageStyle},#{pageSet#num#.total_page},#{pageSet#num#.current_page});
+      jQuery("#pageJade#num#").append(t);
